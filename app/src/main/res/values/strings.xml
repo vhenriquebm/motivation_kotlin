@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Motivation</string>
+
+    <string name="home_welcome_title">Olá Kotlin!</string>
+    <string name="home_button_title">Nova Frase</string>
+    <string name="home_default_phrase">Riscos devem ser corridos, porque o maior risco é não arriscar nada</string>
+
 </resources>

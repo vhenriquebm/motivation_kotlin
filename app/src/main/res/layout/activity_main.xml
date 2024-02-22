@@ -11,9 +11,9 @@
         android:id="@+id/linear_header_icons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/dark_purple"
+        android:background="@color/purple"
         android:orientation="horizontal"
-        android:padding="10dp">
+        android:padding="15dp">
 
         <ImageView
             android:layout_width="0dp"
@@ -25,7 +25,8 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_smile" />
+            android:src="@drawable/ic_smile"
+            app:tint="@color/white" />
 
         <ImageView
             android:layout_width="0dp"
@@ -44,7 +45,9 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="Olá! Kotlin" />
+        android:text="@string/home_welcome_title"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/text_phrase"
@@ -56,7 +59,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="Riscos devem ser corridos, porque o maior risco é não arriscar nada"
+        android:text="@string/home_default_phrase"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -66,16 +69,17 @@
         android:layout_below="@id/text_phrase"
         android:layout_marginLeft="80dp"
         android:layout_marginRight="80dp"
-        android:background="@color/dark_purple" />
+        android:background="@color/dark_purple"
+        android:elevation="5dp" />
 
     <Button
+        android:id="@+id/button_new_phrase"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="40dp"
         android:backgroundTint="@color/dark_purple"
-        android:text="Nova Frase" />
-
+        android:text="@string/home_button_title" />
 
 </RelativeLayout>
